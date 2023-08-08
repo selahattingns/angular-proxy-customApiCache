@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {APIProxyService} from "./proxy-cache/api-proxy.service";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'MyAngularProject';
+  public data: string = '';
+
+  constructor(private apiProxyService: APIProxyService) {}
+
+  getData() {
+    this.data = this.apiProxyService.getData();
+  }
 }
