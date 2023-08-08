@@ -24,9 +24,9 @@ export class APIProxyService {
     if (!this.isDataReceived) {
       this.data = this.remoteApi.getData();
       this.isDataReceived = true;
-      console.log('Cached data saved.');
+      console.log('Data is cached.');
     }
-    console.log('Get Data')
+    console.log('Fetching cached data.')
     return this.data;
   }
 }

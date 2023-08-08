@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class RemoteApiService {
   getData(): string {
-    console.log('Remote Api Data');
-    return 'Remote Api Data';
+    console.log('Remote api service implemented.');
+    return 'Remote api data';
   }
 }
