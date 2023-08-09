@@ -1,9 +1,10 @@
 # angular-proxy-customApiCache
-The subject of the application I developed with the Angular framework;
-Caching the result returned from an executed api
-and if that api process is run again, the request request is repeated
-not thrown away and cached data is visible. I used Proxy pattern for this process..
+The main purpose of the application I developed using the Angular framework is to cache the results returned from an executed API call. If the same API process is performed again, the application utilizes the cached results from the previous request without making the request again. I employed the Proxy Pattern to manage and implement this process.
 
 
-*Sample testing;*
-![image browser](./images/browser.png)
+
+
+
+
+*Structure;*
+![image Structure](./images/structure.png)
